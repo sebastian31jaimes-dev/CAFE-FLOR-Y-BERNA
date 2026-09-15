@@ -96,7 +96,7 @@
     </div>
   </section>
 
-  <!-- 2. NAVEGADOR DE ENTREGABLES INTERACTIVOS CON IMÁGENES Y TEXTOS -->
+  <!-- 2. NAVEGADOR DE ENTREGABLES INTERACTIVOS -->
   <section id="entregables" class="py-16 px-6 max-w-6xl mx-auto border-b border-stone-200">
     <div class="text-center mb-8">
       <span class="text-amber-800 text-xs font-bold uppercase tracking-wider">Entregables de Consultoría</span>
@@ -114,21 +114,28 @@
       <button onclick="switchTab('iceberg')" id="btn-iceberg" class="tab-btn px-4 py-2 rounded-lg font-bold text-sm bg-stone-200 text-stone-700 hover:bg-stone-300">Iceberg Sostenibilidad</button>
     </div>
 
-    <!-- CONTENIDOS -->
+    <!-- CONTENIDOS DE PESTAÑAS CON IMÁGENES -->
 
     <!-- Pestaña 1: Cadena de Valor -->
     <div id="tab-cadena-valor" class="tab-content">
       <div class="bg-white p-6 rounded-2xl shadow border border-amber-200 mb-6">
         <h3 class="text-xl font-bold text-amber-900 mb-4">Lienzo de Cadena de Valor / Modelo de Negocio</h3>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="space-y-3 text-xs text-stone-700">
-            <p>• <strong>Aliados Clave:</strong> Asociación de Cafeteros del Huila, Cámara de Comercio e iNNpulsa, aliados logísticos de tostado de café y producción de empaque[cite: 2].</p>
+        
+        <!-- INFOGRAFÍA CADENA DE VALOR -->
+        <div class="mb-6 rounded-xl overflow-hidden border border-amber-200 shadow-md cursor-pointer" onclick="openModal('cadena-valor.png')">
+          <img src="cadena-valor.png" alt="Cadena de Valor Café Flor y Berna" class="w-full h-auto object-cover hover:opacity-95 transition" onerror="this.src='https://via.placeholder.com/1000x500?text=Subir+cadena-valor.png+a+GitHub'">
+          <p class="text-center text-xs text-stone-500 py-2 bg-stone-100">Haz clic en la imagen para ampliar</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 text-xs text-stone-700">
+          <div class="space-y-3">
+            <p>• <strong>Aliados Clave:</strong> Asociación de Cafeteros del Huila, Cámara de Comercio e iNNpulsa, aliados logísticos de tostao de café y producción de empaque[cite: 2].</p>
             <p>• <strong>Actividades y Procesos:</strong> Logística en producción y comercialización del café, además de manejo de marketing[cite: 2].</p>
             <p>• <strong>Propuesta de Valor:</strong> Café de calidad con historia de finca del Huila y una experiencia familiar que le da un sabor único al producto[cite: 2].</p>
             <p>• <strong>Recursos:</strong> App propia de ventas e inventario, stand físico emergente en Plaza de las Américas, canales digitales (storytelling) e inventario de bolsas[cite: 2].</p>
             <p>• <strong>Canales:</strong> Stand en Plaza de las Américas importante para generar reconocimiento de marca y primer contacto, redes sociales e integración con la App propia de ventas[cite: 2].</p>
           </div>
-          <div class="space-y-3 text-xs text-stone-700">
+          <div class="space-y-3">
             <p>• <strong>Segmento de Clientes:</strong> Amantes del café especial (B2C), compradores de regalos y transeúntes/visitantes de Plaza de las Américas que descubren la marca por impulso o degustación[cite: 2].</p>
             <p>• <strong>Costos:</strong> Costo de materia prima agrícola, costo de adquisición de clientes y costos de aliados de tostao y empaquetado del producto[cite: 2].</p>
             <p>• <strong>Ingresos:</strong> Venta presencial en el stand (Plaza de las Américas), venta digital de bolsas de café y con flujo de caja positivo[cite: 2].</p>
@@ -142,6 +149,13 @@
     <div id="tab-salience-model" class="tab-content hidden">
       <div class="bg-white p-6 rounded-2xl shadow border border-amber-200 mb-6">
         <h3 class="text-xl font-bold text-amber-900 mb-4">Salience Model (Modelo de Saliencia de Stakeholders)</h3>
+        
+        <!-- INFOGRAFÍA SALIENCE MODEL -->
+        <div class="mb-6 rounded-xl overflow-hidden border border-amber-200 shadow-md cursor-pointer" onclick="openModal('salience-model.png')">
+          <img src="salience-model.png" alt="Salience Model Café Flor y Berna" class="w-full h-auto object-cover hover:opacity-95 transition" onerror="this.src='https://via.placeholder.com/1000x500?text=Subir+salience-model.png+a+GitHub'">
+          <p class="text-center text-xs text-stone-500 py-2 bg-stone-100">Haz clic en la imagen para ampliar</p>
+        </div>
+
         <div class="grid md:grid-cols-3 gap-6 text-xs mb-6">
           <div class="bg-amber-100/70 p-4 rounded-xl border border-amber-300">
             <h4 class="font-bold text-amber-950 text-sm mb-1">1. Núcleo de Máxima Atención: Los Definitivos</h4>
@@ -184,8 +198,13 @@
         </div>
 
         <div class="bg-white p-6 rounded-2xl shadow border border-amber-200">
+          <!-- INFOGRAFÍA BUYER PERSONA CELIA MÁRQUEZ -->
+          <div class="mb-4 rounded-xl overflow-hidden border border-amber-200 shadow cursor-pointer" onclick="openModal('buyer-persona.png')">
+            <img src="buyer-persona.png" alt="Buyer Persona Celia Márquez" class="w-full h-auto object-cover hover:opacity-95 transition" onerror="this.src='https://via.placeholder.com/600x400?text=Subir+buyer-persona.png+a+GitHub'">
+          </div>
+
           <div class="flex items-center space-x-3 mb-3">
-            <div class="w-12 h-12 bg-amber-800 rounded-full flex items-center justify-center text-white font-bold">CM</div>
+            <div class="w-10 h-10 bg-amber-800 rounded-full flex items-center justify-center text-white font-bold text-sm">CM</div>
             <div>
               <h3 class="text-lg font-bold text-amber-900">Celia Márquez (38 años)[cite: 2]</h3>
               <p class="text-xs text-stone-500">Chapinero Alto, Bogotá • Consumidora B2C Ideal[cite: 2]</p>
@@ -207,6 +226,13 @@
     <div id="tab-chet-holmes" class="tab-content hidden">
       <div class="bg-stone-900 text-white p-8 rounded-2xl shadow-xl">
         <h3 class="text-2xl font-bold text-amber-400 mb-6 text-center">Pirámide de Mercado Híbrida (B2C & B2B) - Chet Holmes[cite: 2]</h3>
+        
+        <!-- INFOGRAFÍA PIRÁMIDE CHET HOLMES -->
+        <div class="mb-8 rounded-xl overflow-hidden border border-amber-700 shadow-xl cursor-pointer" onclick="openModal('chet-holmes.png')">
+          <img src="chet-holmes.png" alt="Pirámide Chet Holmes Café Flor y Berna" class="w-full h-auto object-cover hover:opacity-95 transition" onerror="this.src='https://via.placeholder.com/1000x500?text=Subir+chet-holmes.png+a+GitHub'">
+          <p class="text-center text-xs text-amber-300 py-2 bg-stone-800">Haz clic en la imagen para ampliar</p>
+        </div>
+
         <div class="space-y-4 max-w-3xl mx-auto text-sm">
           <div class="bg-amber-800/80 p-4 rounded-xl flex justify-between items-center">
             <div>
@@ -244,6 +270,13 @@
     <div id="tab-propuesta-valor" class="tab-content hidden">
       <div class="bg-amber-50 p-8 rounded-2xl border border-amber-200 shadow-md">
         <h3 class="text-xl font-bold text-amber-900 mb-4 flex items-center gap-2"><i data-lucide="refresh-cw"></i> Profundiza, Entiende y Reconstruye la Propuesta de Valor[cite: 2]</h3>
+        
+        <!-- INFOGRAFÍA PROPUESTA DE VALOR -->
+        <div class="mb-6 rounded-xl overflow-hidden border border-amber-200 shadow cursor-pointer" onclick="openModal('propuesta-valor.png')">
+          <img src="propuesta-valor.png" alt="Lienzo Propuesta de Valor Café Flor y Berna" class="w-full h-auto object-cover hover:opacity-95 transition" onerror="this.src='https://via.placeholder.com/1000x500?text=Subir+propuesta-valor.png+a+GitHub'">
+          <p class="text-center text-xs text-stone-500 py-2 bg-amber-100">Haz clic en la imagen para ampliar</p>
+        </div>
+
         <div class="grid md:grid-cols-2 gap-6 text-xs text-stone-700">
           <div class="bg-white p-5 rounded-xl border border-amber-100">
             <strong class="text-amber-900 block mb-2 text-sm">1. Entiende la Problemática a Profundidad[cite: 2]</strong>
@@ -263,6 +296,12 @@
 
     <!-- Pestaña 6: Triple Impacto -->
     <div id="tab-triple-impacto" class="tab-content hidden">
+      <!-- INFOGRAFÍA TRIPLE IMPACTO -->
+      <div class="mb-6 rounded-xl overflow-hidden border border-amber-200 shadow cursor-pointer" onclick="openModal('triple-impacto.png')">
+        <img src="triple-impacto.png" alt="Estrategia Triple Impacto Café Flor y Berna" class="w-full h-auto object-cover hover:opacity-95 transition" onerror="this.src='https://via.placeholder.com/1000x500?text=Subir+triple-impacto.png+a+GitHub'">
+        <p class="text-center text-xs text-stone-500 py-2 bg-stone-100">Haz clic en la imagen para ampliar</p>
+      </div>
+
       <div class="grid md:grid-cols-3 gap-6">
         <div class="bg-white p-6 rounded-2xl border border-amber-200 shadow border-t-4 border-t-amber-700">
           <div class="text-amber-800 mb-3"><i data-lucide="dollar-sign" class="w-8 h-8"></i></div>
@@ -296,6 +335,13 @@
     <div id="tab-iceberg" class="tab-content hidden">
       <div class="bg-stone-900 text-white p-8 rounded-2xl shadow-xl">
         <h3 class="text-xl font-bold text-amber-400 mb-6 flex items-center gap-2"><i data-lucide="layers"></i> Iceberg de la Sostenibilidad (Café en Pepa con Maquila/Intermediario)[cite: 2]</h3>
+        
+        <!-- INFOGRAFÍA ICEBERG -->
+        <div class="mb-6 rounded-xl overflow-hidden border border-amber-700 shadow-xl cursor-pointer" onclick="openModal('iceberg.png')">
+          <img src="iceberg.png" alt="Iceberg Sostenibilidad Café Flor y Berna" class="w-full h-auto object-cover hover:opacity-95 transition" onerror="this.src='https://via.placeholder.com/1000x500?text=Subir+iceberg.png+a+GitHub'">
+          <p class="text-center text-xs text-amber-300 py-2 bg-stone-800">Haz clic en la imagen para ampliar</p>
+        </div>
+
         <div class="space-y-4 text-xs">
           <div class="border-l-4 border-amber-500 pl-4 py-2">
             <span class="text-amber-400 font-bold text-sm">Nivel 1: La Superficie (Lo que el cliente ve ~20%)[cite: 2]</span>
@@ -442,8 +488,8 @@
     <i data-lucide="message-circle" class="w-7 h-7"></i>
   </a>
 
-  <!-- MODAL PARA IMÁGENES -->
-  <div id="imageModal" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-4 cursor-pointer" onclick="closeModal()">
+  <!-- MODAL PARA ZOOM DE IMÁGENES -->
+  <div id="imageModal" class="fixed inset-0 bg-black/85 z-50 hidden flex items-center justify-center p-4 cursor-pointer" onclick="closeModal()">
     <img id="modalImg" src="" class="max-w-full max-h-[90vh] rounded-xl shadow-2xl border-2 border-amber-500">
   </div>
 
