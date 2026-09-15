@@ -6,10 +6,19 @@
   <title>Café Flor y Berna | Centro de Consultoría & Entregables</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @media print {
+      body * { visibility: hidden; }
+      #lienzo-exportable, #lienzo-exportable * { visibility: visible; }
+      #lienzo-exportable { position: absolute; left: 0; top: 0; width: 100%; color: black !important; background: white !important; }
+      .no-print { display: none !important; }
+      textarea { border: 1px solid #ccc !important; background: white !important; color: black !important; }
+    }
+  </style>
 </head>
 <body class="bg-stone-50 text-stone-800 font-sans antialiased">
 
-  <nav class="bg-amber-950 text-amber-100 sticky top-0 z-50 shadow-lg py-3 px-6 flex justify-between items-center border-b border-amber-900">
+  <nav class="bg-amber-950 text-amber-100 sticky top-0 z-50 shadow-lg py-3 px-6 flex justify-between items-center border-b border-amber-900 no-print">
     <div class="flex items-center space-x-3">
       <img src="galeria-logo.jpg.png" alt="Logo Café Flor & Berna" class="w-12 h-12 rounded-full border-2 border-amber-500 object-cover shadow">
       <div>
@@ -24,6 +33,7 @@
       <a href="#entregables" class="hover:text-amber-400 transition">Entregables Estratégicos</a>
       <a href="#financiero" class="hover:text-amber-400 transition">Modelo Financiero</a>
       <a href="#recomendaciones" class="hover:text-amber-400 transition">Recomendaciones</a>
+      <a href="#herramienta-interactive" class="hover:text-amber-400 transition">Herramienta Interactiva</a>
     </div>
 
     <div class="flex items-center space-x-3">
@@ -41,7 +51,7 @@
     </div>
   </nav>
 
-  <header id="inicio" class="relative bg-gradient-to-r from-amber-950 via-stone-900 to-amber-900 text-white py-16 px-6 text-center border-b border-amber-800">
+  <header id="inicio" class="relative bg-gradient-to-r from-amber-950 via-stone-900 to-amber-900 text-white py-16 px-6 text-center border-b border-amber-800 no-print">
     <div class="max-w-5xl mx-auto flex flex-col items-center">
       
       <div class="mb-6 p-2 bg-amber-950/80 rounded-full border-2 border-amber-500 shadow-2xl">
@@ -57,15 +67,15 @@
         <a href="cafe flor y berna.docx" download class="bg-amber-700 hover:bg-amber-600 text-white px-6 py-3 rounded-lg font-bold transition shadow-lg flex items-center gap-2">
           <i data-lucide="file-text" class="w-5 h-5"></i> Descargar Documento Completo (.docx)
         </a>
-        <a href="#recomendaciones" class="bg-amber-900/80 hover:bg-amber-800 text-amber-200 px-6 py-3 rounded-lg font-bold transition shadow-lg flex items-center gap-2 border border-amber-700">
-          <i data-lucide="check-circle" class="w-5 h-5"></i> Ver Recomendaciones del Consultor
+        <a href="#herramienta-interactive" class="bg-amber-900/80 hover:bg-amber-800 text-amber-200 px-6 py-3 rounded-lg font-bold transition shadow-lg flex items-center gap-2 border border-amber-700">
+          <i data-lucide="wrench" class="w-5 h-5"></i> Probar Herramienta Interactiva
         </a>
       </div>
       <p class="text-xs text-stone-400 mt-6">Consultores: Sebastián Hernández & Juan Sebastián Jaimes | Bogotá, Colombia (2026)</p>
     </div>
   </header>
 
-  <section id="multimedia" class="py-16 px-6 max-w-6xl mx-auto border-b border-stone-200">
+  <section id="multimedia" class="py-16 px-6 max-w-6xl mx-auto border-b border-stone-200 no-print">
     <div class="text-center mb-10">
       <h2 class="text-3xl font-bold text-amber-950">Contenido Publicitario y Galería Oficial</h2>
       <p class="text-stone-600">Material audiovisual de la marca, empaques de origen y punto de degustación presencial.</p>
@@ -100,7 +110,7 @@
     </div>
   </section>
 
-  <section id="entregables" class="py-16 px-6 max-w-6xl mx-auto border-b border-stone-200">
+  <section id="entregables" class="py-16 px-6 max-w-6xl mx-auto border-b border-stone-200 no-print">
     <div class="text-center mb-8">
       <span class="text-amber-800 text-xs font-bold uppercase tracking-wider">Entregables de Consultoría</span>
       <h2 class="text-3xl font-bold text-amber-950 mt-1">Modelos Estratégicos & Infografías</h2>
@@ -267,7 +277,7 @@
     </div>
   </section>
 
-  <section id="financiero" class="py-16 px-6 max-w-6xl mx-auto">
+  <section id="financiero" class="py-16 px-6 max-w-6xl mx-auto no-print">
     <div class="text-center mb-12">
       <span class="text-amber-800 text-xs font-bold uppercase tracking-wider">Diagnóstico Financiero</span>
       <h2 class="text-3xl font-bold text-amber-950 mt-1">Portafolio de Productos & Variables Financieras</h2>
@@ -378,7 +388,7 @@
     </div>
   </section>
 
-  <section id="recomendaciones" class="py-16 px-6 max-w-6xl mx-auto border-t border-stone-200">
+  <section id="recomendaciones" class="py-16 px-6 max-w-6xl mx-auto border-t border-stone-200 no-print">
     <div class="text-center mb-12">
       <span class="bg-amber-800 text-amber-200 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-bold">Dictamen Estratégico</span>
       <h2 class="text-3xl font-bold text-amber-950 mt-3">Recomendaciones Finales & Plan de Reestructuración</h2>
@@ -388,7 +398,6 @@
     </div>
 
     <div class="space-y-8">
-
       <div class="bg-white p-6 rounded-2xl shadow-lg border-l-8 border-amber-800 border-t border-r border-b border-stone-200">
         <div class="flex items-center gap-3 mb-4">
           <span class="bg-amber-900 text-white font-extrabold w-8 h-8 rounded-full flex items-center justify-center text-sm shadow">1</span>
@@ -473,23 +482,120 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <footer class="bg-amber-950 text-stone-400 py-8 px-6 text-center text-xs border-t border-amber-900">
+  <section id="herramienta-interactive" class="py-16 px-6 max-w-6xl mx-auto border-t border-stone-200">
+    <div class="text-center mb-10">
+      <span class="bg-amber-900 text-amber-200 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-bold">Herramienta Metodológica Universal</span>
+      <h2 class="text-3xl font-bold text-amber-950 mt-3">Framework de Reestructuración & Pivote Estratégico (FRPE)</h2>
+      <p class="text-stone-600 text-sm max-w-3xl mx-auto mt-2">
+        Metodología de consultoría diseñada para diagnosticar, blindar y reorientar cualquier PyME. Puedes usar este lienzo interactivo para diligenciar los objetivos de tu empresa y exportar el plan final.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-4 text-xs mb-10 no-print">
+      <div class="bg-white p-5 rounded-xl border-t-4 border-amber-900 shadow-md">
+        <span class="text-amber-900 font-extrabold text-sm block mb-1">PASO 1</span>
+        <h4 class="font-bold text-amber-950 text-sm mb-2">Diagnóstico Operativo</h4>
+        <p class="text-stone-600">Identificar fallas en la calidad del producto, cuello de botella en producción y sobrecostos logísticos.</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl border-t-4 border-amber-700 shadow-md">
+        <span class="text-amber-700 font-extrabold text-sm block mb-1">PASO 2</span>
+        <h4 class="font-bold text-amber-950 text-sm mb-2">Blindaje Normativo</h4>
+        <p class="text-stone-600">Revisión de requisitos legales, registro mercantil, facturación electrónica B2B e inspección sanitaria (INVIMA).</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl border-t-4 border-amber-500 shadow-md">
+        <span class="text-amber-600 font-extrabold text-sm block mb-1">PASO 3</span>
+        <h4 class="font-bold text-amber-950 text-sm mb-2">Categorización Oficial</h4>
+        <p class="text-stone-600">Certificación de calidad respaldada por evaluaciones técnicas o entidades acreditadoras independientes.</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl border-t-4 border-emerald-600 shadow-md">
+        <span class="text-emerald-700 font-extrabold text-sm block mb-1">PASO 4</span>
+        <h4 class="font-bold text-amber-950 text-sm mb-2">Pivote & Escala</h4>
+        <p class="text-stone-600">Reorientación comercial a clientes institucionales/B2B y certificaciones de exportación (ISO / GAP).</p>
+      </div>
+    </div>
+
+    <div id="lienzo-exportable" class="bg-stone-900 text-white p-8 rounded-2xl shadow-2xl border-2 border-amber-600">
+      <div class="flex flex-wrap justify-between items-center mb-6 pb-4 border-b border-stone-800">
+        <div>
+          <h3 class="text-2xl font-bold text-amber-400">Lienzo Canvas del Consultor (Matriz 4E)</h3>
+          <p class="text-xs text-stone-400">Diligencia los 4 cuadrantes con los compromisos estratégicos para tu empresa.</p>
+        </div>
+        <div class="flex items-center space-x-2 mt-4 sm:mt-0 no-print">
+          <input type="text" id="nombreEmpresa" placeholder="Escribe el nombre de la empresa..." class="bg-stone-800 text-white px-3 py-2 rounded-lg text-xs border border-stone-700 focus:outline-none focus:border-amber-500">
+          <button onclick="guardarBorrador()" class="bg-amber-800 hover:bg-amber-700 text-white px-3 py-2 rounded-lg text-xs font-bold transition flex items-center gap-1">
+            <i data-lucide="save" class="w-4 h-4"></i> Guardar
+          </button>
+          <button onclick="exportarPlan()" class="bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg text-xs font-bold transition flex items-center gap-1 shadow-lg">
+            <i data-lucide="printer" class="w-4 h-4"></i> Exportar / Imprimir PDF
+          </button>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        
+        <div class="bg-stone-800/90 p-5 rounded-xl border border-stone-700 flex flex-col">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-amber-900 text-amber-200 text-xs font-bold px-2 py-0.5 rounded">1</span>
+            <h4 class="font-bold text-amber-300 text-sm">Fugas de Valor (Acciones para Detener)</h4>
+          </div>
+          <p class="text-[11px] text-stone-400 mb-2">¿Qué ineficiencias técnicas, pérdida de calidad o canales con altos sobrecostos deben eliminarse?</p>
+          <textarea id="cuadrante1" rows="5" class="w-full bg-stone-950 text-stone-200 p-3 rounded-lg text-xs border border-stone-800 focus:outline-none focus:border-amber-500 transition resize-none" placeholder="Ejemplo: Estancamiento de calidad en tueste, canales al detal B2C con fletes altos..."></textarea>
+        </div>
+
+        <div class="bg-stone-800/90 p-5 rounded-xl border border-stone-700 flex flex-col">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-amber-700 text-amber-200 text-xs font-bold px-2 py-0.5 rounded">2</span>
+            <h4 class="font-bold text-amber-300 text-sm">Blindaje Legal & Normativo (Formalizar)</h4>
+          </div>
+          <p class="text-[11px] text-stone-400 mb-2">¿Qué registros mercantiles, facturación o permisos sanitarios (INVIMA) se deben tramitar?</p>
+          <textarea id="cuadrante2" rows="5" class="w-full bg-stone-950 text-stone-200 p-3 rounded-lg text-xs border border-stone-800 focus:outline-none focus:border-amber-500 transition resize-none" placeholder="Ejemplo: Formalización en Cámara de Comercio, habilitación de factura electrónica B2B, registro INVIMA..."></textarea>
+        </div>
+
+        <div class="bg-stone-800/90 p-5 rounded-xl border border-stone-700 flex flex-col">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-amber-500 text-stone-950 text-xs font-bold px-2 py-0.5 rounded">3</span>
+            <h4 class="font-bold text-amber-300 text-sm">Estándares de Calidad (Categorizar)</h4>
+          </div>
+          <p class="text-[11px] text-stone-400 mb-2">¿Qué certificaciones técnicas o cataciones de expertos avalarán el precio premium?</p>
+          <textarea id="cuadrante3" rows="5" class="w-full bg-stone-950 text-stone-200 p-3 rounded-lg text-xs border border-stone-800 focus:outline-none focus:border-amber-500 transition resize-none" placeholder="Ejemplo: Catación Q-Grader de la Federación Nacional de Cafeteros, empaque trilaminado con válvula..."></textarea>
+        </div>
+
+        <div class="bg-stone-800/90 p-5 rounded-xl border border-stone-700 flex flex-col">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-emerald-600 text-white text-xs font-bold px-2 py-0.5 rounded">4</span>
+            <h4 class="font-bold text-emerald-400 text-sm">Pivote Comercial & Escala (Escalar)</h4>
+          </div>
+          <p class="text-[11px] text-stone-400 mb-2">¿Cuál es el nuevo canal prioritario B2B y qué certificaciones (ISO/GAP) permitirán exportar?</p>
+          <textarea id="cuadrante4" rows="5" class="w-full bg-stone-950 text-stone-200 p-3 rounded-lg text-xs border border-stone-800 focus:outline-none focus:border-amber-500 transition resize-none" placeholder="Ejemplo: Enfoque exclusivo a contratos de regalos corporativos B2B, certificación GlobalG.A.P. en finca..."></textarea>
+        </div>
+
+      </div>
+      
+      <p class="text-[10px] text-stone-500 text-center mt-6 border-t border-stone-800 pt-3">
+        Framework Metodológico desarrollado por el equipo de Consultoría Empresarial (2026).
+      </p>
+    </div>
+  </section>
+
+  <footer class="bg-amber-950 text-stone-400 py-8 px-6 text-center text-xs border-t border-amber-900 no-print">
     <p>© 2026 Café Flor & Berna - Todos los derechos reservados.</p>
     <p class="text-stone-500 mt-1">Desarrollado para la sustentación y presentación del proyecto de consultoría empresarial.</p>
   </footer>
 
   <a href="https://api.whatsapp.com/send?phone=573187154331&text=Hola,%20me%20gustaria%20recibir%20mas%20informacion%20de%20Cafe%20Flor%20y%20Berna" 
      target="_blank" 
-     class="fixed bottom-6 right-6 bg-emerald-600 hover:bg-emerald-500 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 z-50"
+     class="fixed bottom-6 right-6 bg-emerald-600 hover:bg-emerald-500 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 z-50 no-print"
      title="Abrir WhatsApp Business">
     <i data-lucide="message-circle" class="w-7 h-7"></i>
   </a>
 
-  <div id="imageModal" class="fixed inset-0 bg-black/85 z-50 hidden flex items-center justify-center p-4 cursor-pointer" onclick="closeModal()">
+  <div id="imageModal" class="fixed inset-0 bg-black/85 z-50 hidden flex items-center justify-center p-4 cursor-pointer no-print" onclick="closeModal()">
     <img id="modalImg" src="" class="max-w-full max-h-[90vh] rounded-xl shadow-2xl border-2 border-amber-500">
   </div>
 
@@ -517,6 +623,39 @@
     function closeModal() {
       document.getElementById('imageModal').classList.add('hidden');
     }
+
+    // FUNCIONES DE LA HERRAMIENTA INTERACTIVA
+    function guardarBorrador() {
+      const datos = {
+        empresa: document.getElementById('nombreEmpresa').value,
+        c1: document.getElementById('cuadrante1').value,
+        c2: document.getElementById('cuadrante2').value,
+        c3: document.getElementById('cuadrante3').value,
+        c4: document.getElementById('cuadrante4').value
+      };
+      localStorage.setItem('frpe_borrador', JSON.stringify(datos));
+      alert('¡Plan de acción guardado exitosamente en este navegador!');
+    }
+
+    function cargarBorrador() {
+      const guardado = localStorage.getItem('frpe_borrador');
+      if (guardado) {
+        const datos = JSON.parse(guardado);
+        if(datos.empresa) document.getElementById('nombreEmpresa').value = datos.empresa;
+        if(datos.c1) document.getElementById('cuadrante1').value = datos.c1;
+        if(datos.c2) document.getElementById('cuadrante2').value = datos.c2;
+        if(datos.c3) document.getElementById('cuadrante3').value = datos.c3;
+        if(datos.c4) document.getElementById('cuadrante4').value = datos.c4;
+      }
+    }
+
+    function exportarPlan() {
+      window.print();
+    }
+
+    window.onload = function() {
+      cargarBorrador();
+    };
   </script>
 </body>
 </html>
