@@ -29,7 +29,8 @@
     
     <div class="hidden lg:flex space-x-6 text-sm font-medium">
       <a href="#inicio" class="hover:text-amber-400 transition">Inicio</a>
-      <a href="#multimedia" class="hover:text-amber-400 transition">Video & Galería</a>
+      <a href="#video-promo-seccion" class="hover:text-amber-400 transition text-amber-300 font-bold">Video Promocional</a>
+      <a href="#multimedia" class="hover:text-amber-400 transition">Galería</a>
       <a href="#entregables" class="hover:text-amber-400 transition">Entregables Estratégicos</a>
       <a href="#financiero" class="hover:text-amber-400 transition">Modelo Financiero</a>
       <a href="#recomendaciones" class="hover:text-amber-400 transition">Recomendaciones</a>
@@ -67,7 +68,7 @@
         <a href="cafe flor y berna.docx" download class="bg-amber-700 hover:bg-amber-600 text-white px-6 py-3 rounded-lg font-bold transition shadow-lg flex items-center gap-2">
           <i data-lucide="file-text" class="w-5 h-5"></i> Descargar Documento Completo (.docx)
         </a>
-        <a href="#multimedia" class="bg-amber-900/80 hover:bg-amber-800 text-amber-200 px-6 py-3 rounded-lg font-bold transition shadow-lg flex items-center gap-2 border border-amber-700">
+        <a href="#video-promo-seccion" class="bg-amber-900/80 hover:bg-amber-800 text-amber-200 px-6 py-3 rounded-lg font-bold transition shadow-lg flex items-center gap-2 border border-amber-700">
           <i data-lucide="play-circle" class="w-5 h-5"></i> Ver Video Promocional
         </a>
       </div>
@@ -75,22 +76,38 @@
     </div>
   </header>
 
+  <section id="video-promo-seccion" class="py-16 px-6 bg-stone-900 text-white border-b border-amber-900 no-print">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="bg-amber-800 text-amber-200 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-bold">Material Publicitario Oficial</span>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-amber-400 mt-3 mb-2">Video Promocional</h2>
+      <p class="text-stone-300 text-sm mb-8 max-w-xl mx-auto">
+        Conoce la experiencia de marca, nuestro café de origen Huila y la propuesta comercial de Café Flor & Berna.
+      </p>
+
+      <div class="bg-black rounded-2xl overflow-hidden shadow-2xl border-2 border-amber-500 aspect-video w-full max-w-3xl mx-auto relative group">
+        <video class="w-full h-full object-cover" controls poster="galeria-logo.jpg.png">
+          <source src="video-nuevo.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </div>
+  </section>
+
   <section id="multimedia" class="py-16 px-6 max-w-6xl mx-auto border-b border-stone-200 no-print">
     <div class="text-center mb-10">
-      <span class="bg-amber-800 text-amber-200 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-bold">Lanzamiento Oficial</span>
-      <h2 class="text-3xl font-bold text-amber-950 mt-2">Video Promocional & Galería de Marca</h2>
-      <p class="text-stone-600 text-sm mt-1">Material audiovisual publicitario, empaques de origen y experiencia presencial en stand.</p>
+      <span class="bg-amber-800 text-amber-200 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-bold">Galería de Experiencia</span>
+      <h2 class="text-3xl font-bold text-amber-950 mt-2">Galería & Registro Audiovisual</h2>
+      <p class="text-stone-600 text-sm mt-1">Registro de producto, empaques de origen y presencia institucional en stand.</p>
     </div>
 
     <div class="grid md:grid-cols-12 gap-8 items-center">
       <div class="md:col-span-7 bg-black rounded-2xl overflow-hidden shadow-2xl aspect-[9/16] md:aspect-video relative flex flex-col justify-between border-2 border-amber-600 max-h-[520px] mx-auto w-full group">
-        <video class="w-full h-full object-cover" controls autoplay loop muted poster="galeria-logo.jpg.png">
-          <source src="video-nuevo.mp4" type="video/mp4">
+        <video class="w-full h-full object-cover" controls poster="galeria-logo.jpg.png">
           <source src="video-promocional.mp4.mp4" type="video/mp4">
           Tu navegador no soporta la reproducción de video.
         </video>
         <div class="absolute top-3 left-3 bg-black/80 text-amber-300 text-xs px-3 py-1 rounded-full font-bold border border-amber-500/50 flex items-center gap-1 shadow">
-          <i data-lucide="video" class="w-3.5 h-3.5"></i> Video Promocional
+          <i data-lucide="video" class="w-3.5 h-3.5"></i> Video institucional
         </div>
       </div>
 
