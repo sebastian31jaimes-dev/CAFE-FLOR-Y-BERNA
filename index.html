@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Flor y Berna | Centro de Consultoría & Entregables</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+
+  <!-- NAVBAR -->
+  <nav class="bg-amber-950 text-amber-100 sticky top-0 z-50 shadow-lg py-4 px-6 flex justify-between items-center border-b border-amber-900">
+    <div class="flex items-center space-x-3">
+      <i data-lucide="coffee" class="w-8 h-8 text-amber-500"></i>
+      <div>
+        <span class="text-xl font-bold tracking-wide block">Café Flor y Berna</span>
+        <span class="text-xs text-amber-400 block -mt-1">Origen Huila • Proceso Honey</span>
+      </div>
+    </div>
+    
+    <div class="hidden lg:flex space-x-6 text-sm font-medium">
+      <a href="#inicio" class="hover:text-amber-400 transition">Inicio</a>
+      <a href="#multimedia" class="hover:text-amber-400 transition">Video & Galería</a>
+      <a href="#mercado" class="hover:text-amber-400 transition">Mercado & Chet Holmes</a>
+      <a href="#propuesta" class="hover:text-amber-400 transition">Propuesta de Valor</a>
+      <a href="#sostenibilidad" class="hover:text-amber-400 transition">Sostenibilidad & Salience</a>
+      <a href="#financiero" class="hover:text-amber-400 transition">Modelo Financiero</a>
+    </div>
+
+    <a href="https://api.whatsapp.com/send?phone=573000000000&text=Hola,%20quisiera%20consultar%20los%20entregables%20de%20Cafe%20Flor%20y%20Berna" 
+       target="_blank" 
+       class="bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg font-semibold flex items-center space-x-2 text-sm shadow transition">
+      <i data-lucide="message-circle" class="w-4 h-4"></i>
+      <span>WhatsApp Web</span>
+    </a>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header id="inicio" class="relative bg-gradient-to-r from-amber-950 via-stone-900 to-amber-900 text-white py-20 px-6 text-center border-b border-amber-800">
+    <div class="max-w-5xl mx-auto">
+      <span class="bg-amber-800/80 text-amber-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest">Dashboard de Entregables Estratégicos</span>
+      <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">Asesoramiento Integral: Café Flor y Berna</h1>
+      <p class="text-lg md:text-xl text-stone-300 max-w-3xl mx-auto mb-8">
+        Diagnóstico financiero, estrategia de Mercado Cabeza de Playa (B2B/B2C), modelo de saliencia, propuesta de valor y plan de triple impacto.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#mercado" class="bg-amber-600 hover:bg-amber-500 text-white px-6 py-3 rounded-lg font-bold transition shadow-lg flex items-center gap-2">
+          <i data-lucide="layout-dashboard" class="w-5 h-5"></i> Explorar Entregables
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=573000000000&text=Hola,%20deseo%20mas%20informacion%20del%20proyecto" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-lg font-bold transition flex items-center gap-2 shadow-lg">
+          <i data-lucide="message-circle" class="w-5 h-5"></i> Contactar vía WhatsApp
+        </a>
+      </div>
+      <p class="text-xs text-stone-400 mt-6">Consultores: Sebastián Hernández & Juan Sebastián Jaimes | Bogotá, Colombia (2026)</p>
+    </div>
+  </header>
+
+  <!-- 1. MULTIMEDIA & VIDEO PUBLICITARIO -->
+  <section id="multimedia" class="py-16 px-6 max-w-6xl mx-auto border-b border-stone-200">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-bold text-amber-950">Contenido Publicitario y Galería</h2>
+      <p class="text-stone-600">Material audiovisual para promoción de marca y experiencias B2B/B2C.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <!-- Video Publicitario -->
+      <div class="bg-black rounded-2xl overflow-hidden shadow-2xl aspect-video relative flex items-center justify-center border-2 border-amber-900">
+        <!-- Reemplaza el src con la URL de tu video corporativo de YouTube / Vimeo / MP4 -->
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/placeholder" title="Video Publicitario Café Flor y Berna" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <!-- Galería de imágenes promocionales -->
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-stone-200 h-40 rounded-xl overflow-hidden shadow relative group">
+          <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=500&q=80" alt="Café de Especialidad" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          <span class="absolute bottom-2 left-2 bg-black/70 text-amber-300 text-xs px-2 py-1 rounded">Origen Huila</span>
+        </div>
+        <div class="bg-stone-200 h-40 rounded-xl overflow-hidden shadow relative group">
+          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Proceso Honey" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          <span class="absolute bottom-2 left-2 bg-black/70 text-amber-300 text-xs px-2 py-1 rounded">Proceso Honey</span>
+        </div>
+        <div class="bg-stone-200 h-40 rounded-xl overflow-hidden shadow relative group">
+          <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=500&q=80" alt="Empaque Trazable" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          <span class="absolute bottom-2 left-2 bg-black/70 text-amber-300 text-xs px-2 py-1 rounded">Empaque QR</span>
+        </div>
+        <div class="bg-stone-200 h-40 rounded-xl overflow-hidden shadow relative group">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=500&q=80" alt="Catas B2B" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          <span class="absolute bottom-2 left-2 bg-black/70 text-amber-300 text-xs px-2 py-1 rounded">Catas Corporativas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. MERCADO CABEZA DE PLAYA & BUYER PERSONA -->
+  <section id="mercado" class="py-16 px-6 max-w-6xl mx-auto border-b border-stone-200">
+    <div class="text-center mb-12">
+      <span class="text-amber-800 text-xs font-bold uppercase tracking-wider">Entregable 1</span>
+      <h2 class="text-3xl font-bold text-amber-950 mt-1">Mercado Cabeza de Playa & Buyer Persona</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 mb-12">
+      <!-- Mercado Cabeza de Playa -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg border border-amber-200">
+        <h3 class="text-xl font-bold text-amber-900 mb-4 flex items-center gap-2">
+          <i data-lucide="target" class="text-amber-600"></i> Mercado Cabeza de Playa Seleccionado
+        </h3>
+        <p class="text-sm text-stone-700 leading-relaxed mb-4">
+          <strong>Segmento B2B:</strong> Empresas de Servicios Profesionales (Consultoras, Agencias y Firmas de Abogados en Bogotá) que compran Regalos Corporativos de Lujo y requieren Experiencias de Café de Especialidad (Huila - Honey) para sus Eventos VIP.
+        </p>
+        <ul class="space-y-2 text-xs text-stone-600 bg-amber-50 p-4 rounded-xl border border-amber-100">
+          <li>• <strong>TAM:</strong> ~$12.000M COP (Gasto total café de especialidad Bogotá)</li>
+          <li>• <strong>SAM:</strong> ~$850M COP (Presupuesto regalos corporativos B2B)</li>
+          <li>• <strong>SOM:</strong> ~$60.96M COP anuales (100% capacidad para 50 kg/mes)</li>
+        </ul>
+      </div>
+
+      <!-- Buyer Persona: Celia Márquez -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg border border-amber-200">
+        <div class="flex items-center space-x-4 mb-4">
+          <div class="w-14 h-14 bg-amber-800 rounded-full flex items-center justify-center text-white text-xl font-bold">CM</div>
+          <div>
+            <h3 class="text-xl font-bold text-amber-900">Celia Márquez (38 años)</h3>
+            <p class="text-xs text-stone-500">Chapinero Alto, Bogotá • Apasionada por Café de Especialidad</p>
+          </div>
+        </div>
+        <p class="text-xs text-stone-600 mb-3"><strong>Frustración:</strong> Cansada de cafés gourmet industriales quemados que no justifican su precio y carecen de trazabilidad real.</p>
+        <p class="text-xs text-stone-600 mb-3"><strong>Objetivo:</strong> Encontrar café de finca con perfil de taza único, tueste fresco garantizado y apoyo a caficultores con pago justo.</p>
+        <blockquote class="text-xs italic text-amber-900 bg-amber-100/60 p-3 rounded-lg border-l-4 border-amber-700">
+          "El café no es solo bebida; es un ritual de reconexión y respeto por la tierra."
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- PIRÁMIDE DE CHET HOLMES -->
+    <div class="bg-stone-900 text-white p-8 rounded-2xl shadow-xl">
+      <h3 class="text-2xl font-bold text-amber-400 mb-6 text-center flex items-center justify-center gap-2">
+        <i data-lucide="triangle"></i> Pirámide de Mercado Híbrida (Chet Holmes)
+      </h3>
+      <div class="space-y-4 max-w-3xl mx-auto text-sm">
+        <div class="bg-amber-800/80 p-4 rounded-xl flex justify-between items-center">
+          <div>
+            <span class="font-bold text-amber-200">3% Comprando Ahora:</span>
+            <p class="text-xs text-stone-200">B2C Aficionados Activos & B2B Organizadores de Eventos VIP</p>
+          </div>
+          <span class="bg-amber-950 text-amber-300 text-xs px-3 py-1 rounded font-bold">Lanzamiento Honey $30k/250g</span>
+        </div>
+        <div class="bg-amber-900/60 p-4 rounded-xl flex justify-between items-center">
+          <div>
+            <span class="font-bold text-amber-200">7% Abiertos a Probar:</span>
+            <p class="text-xs text-stone-200">Buscadores de nuevos orígenes y experiencias</p>
+          </div>
+          <span class="bg-amber-950 text-amber-300 text-xs px-3 py-1 rounded font-bold">Catas Corporativas / Team Building</span>
+        </div>
+        <div class="bg-stone-800 p-4 rounded-xl flex justify-between items-center">
+          <div>
+            <span class="font-bold text-stone-300">30% No Piensan en Ello:</span>
+            <p class="text-xs text-stone-400">Consumidores de café comercial diario</p>
+          </div>
+          <span class="bg-stone-900 text-stone-300 text-xs px-3 py-1 rounded">Educación de Calidad / Tueste</span>
+        </div>
+        <div class="bg-stone-800/60 p-4 rounded-xl justify-between items-center hidden md:flex">
+          <div>
+            <span class="font-bold text-stone-400">60% Restante (No Interesados / Fuera de Mercado):</span>
+            <p class="text-xs text-stone-400">Priorizan solo precio bajo o solubles industriales</p>
+          </div>
+          <span class="bg-stone-900 text-stone-400 text-xs px-3 py-1 rounded">Filtrar y Encarar Recursos B2B</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PROPUESTA DE VALOR & TRIPLE IMPACTO -->
+  <section id="propuesta" class="py-16 px-6 max-w-6xl mx-auto border-b border-stone-200">
+    <div class="text-center mb-12">
+      <span class="text-amber-800 text-xs font-bold uppercase tracking-wider">Entregables 2 y 3</span>
+      <h2 class="text-3xl font-bold text-amber-950 mt-1">Reconstrucción de Propuesta de Valor & Triple Impacto</h2>
+    </div>
+
+    <!-- Lienzo de Reconstrucción -->
+    <div class="bg-amber-50 p-8 rounded-2xl border border-amber-200 mb-12 shadow-md">
+      <h3 class="text-xl font-bold text-amber-900 mb-4 flex items-center gap-2">
+        <i data-lucide="refresh-cw"></i> Propuesta de Valor Reconstruida
+      </h3>
+      <div class="grid md:grid-cols-2 gap-6 text-sm text-stone-700">
+        <div class="bg-white p-5 rounded-xl border border-amber-100">
+          <strong class="text-amber-900 block mb-1">Causa Raíz Identificada:</strong>
+          <p class="text-xs leading-relaxed text-stone-600">Desconexión entre el origen artesanal y el consumidor final debido al tueste industrial masivo y la falta de trazabilidad auténtica.</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-amber-100">
+          <strong class="text-amber-900 block mb-1">Solución Redefinida:</strong>
+          <p class="text-xs leading-relaxed text-stone-600">Café de finca seleccionado (Huila-Honey) con tueste artesanal por lotes, trazable y ético, garantizando frescura y perfil dulce natural ($30.000 COP / 250g).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Triple Impacto -->
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-2xl border border-amber-200 shadow border-t-4 border-t-amber-700">
+        <div class="text-amber-800 mb-3"><i data-lucide="dollar-sign" class="w-8 h-8"></i></div>
+        <h4 class="font-bold text-lg text-stone-800 mb-2">Impacto Económico</h4>
+        <ul class="text-xs text-stone-600 space-y-2">
+          <li>• Modelo Híbrido: B2C Core + Conversión B2B (Eventos/Regalos).</li>
+          <li>• Margen Bruto objetivo del 59.6%.</li>
+          <li>• Nómina Administrativa ajustada ($16.01M) e Intangibles ($2M).</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-amber-200 shadow border-t-4 border-t-emerald-600">
+        <div class="text-emerald-700 mb-3"><i data-lucide="users" class="w-8 h-8"></i></div>
+        <h4 class="font-bold text-lg text-stone-800 mb-2">Impacto Social</h4>
+        <ul class="text-xs text-stone-600 space-y-2">
+          <li>• Alianza de especialización con recolectores en finca (Huila).</li>
+          <li>• Capacitación técnica en selección de cereza madura (Honey).</li>
+          <li>• Dignificación del campo con prima de calidad sobre precio bolsa.</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-amber-200 shadow border-t-4 border-t-blue-600">
+        <div class="text-blue-600 mb-3"><i data-lucide="leaf" class="w-8 h-8"></i></div>
+        <h4 class="font-bold text-lg text-stone-800 mb-2">Impacto Ambiental</h4>
+        <ul class="text-xs text-stone-600 space-y-2">
+          <li>• Bolsa bilaminada con válvula desgasificadora y código QR.</li>
+          <li>• Logística en sacos GrainPro reutilizables desde Huila.</li>
+          <li>• Reducción de huella de carbono en transporte secundario.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SALIENCE MODEL & ICEBERG DE SOSTENIBILIDAD -->
+  <section id="sostenibilidad" class="py-16 px-6 max-w-6xl mx-auto border-b border-stone-200">
+    <div class="text-center mb-12">
+      <span class="text-amber-800 text-xs font-bold uppercase tracking-wider">Entregables 4 y 5</span>
+      <h2 class="text-3xl font-bold text-amber-950 mt-1">Salience Model & Iceberg de Sostenibilidad</h2>
+    </div>
+
+    <!-- Salience Model -->
+    <div class="bg-white p-8 rounded-2xl border border-amber-200 shadow-md mb-12">
+      <h3 class="text-xl font-bold text-amber-900 mb-6 flex items-center gap-2">
+        <i data-lucide="shield-alert"></i> Salience Model (Modelo de Saliencia de Stakeholders)
+      </h3>
+      <div class="grid md:grid-cols-3 gap-6 text-xs">
+        <div class="bg-amber-100/70 p-5 rounded-xl border border-amber-300">
+          <span class="font-bold text-amber-950 text-sm block mb-2">1. Núcleo Crítico / Definitivo</span>
+          <p class="text-amber-900 font-semibold">Poder + Legitimidad + Urgencia</p>
+          <p class="mt-2 text-stone-700">• Socios/Inversionistas del proyecto.<br>• Autoridades sanitarias (INVIMA, ICA, Registro de Exportadores).</p>
+        </div>
+
+        <div class="bg-stone-100 p-5 rounded-xl border border-stone-300">
+          <span class="font-bold text-stone-900 text-sm block mb-2">2. Anillo Intermedio</span>
+          <p class="text-stone-700 font-semibold">• Dominante: Proveedores de insumos, maquinaria y entidades financieras.</p>
+          <p class="text-stone-700 font-semibold mt-1">• Peligroso: Competidores agresivos y plagas/clima.</p>
+          <p class="text-stone-700 font-semibold mt-1">• Dependiente: Recolectores de finca y compradores iniciales.</p>
+        </div>
+
+        <div class="bg-stone-50 p-5 rounded-xl border border-stone-200">
+          <span class="font-bold text-stone-700 text-sm block mb-2">3. Anillo Exterior</span>
+          <p class="text-stone-600">• Inactivo: Federación Nacional de Cafeteros.</p>
+          <p class="text-stone-600 mt-1">• Discrecional: Certificadoras ambientales (Fairtrade, Rainforest).</p>
+          <p class="text-stone-600 mt-1">• Demandante: Intermediarios informales de pasilla.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Iceberg de Sostenibilidad -->
+    <div class="bg-stone-900 text-white p-8 rounded-2xl shadow-xl">
+      <h3 class="text-xl font-bold text-amber-400 mb-6 flex items-center gap-2">
+        <i data-lucide="layers"></i> Iceberg de la Sostenibilidad (Café en Pepa)
+      </h3>
+      <div class="space-y-4 text-xs">
+        <div class="border-l-4 border-amber-500 pl-4 py-2">
+          <span class="text-amber-400 font-bold text-sm">Nivel 1: La Superficie (~20% visible)</span>
+          <p class="text-stone-300 mt-1">Producto final comercializado (Café Tostado/En Pepa) + Cumplimiento normativo básico (Registros ICA / INVIMA).</p>
+        </div>
+        <div class="border-l-4 border-amber-600 pl-4 py-2 bg-stone-800/50 rounded-r-lg">
+          <span class="text-amber-300 font-bold text-sm">Nivel 2: Operación con Intermediario y Cadena de Custodia</span>
+          <p class="text-stone-300 mt-1">Auditoría a trilladora/maquila, eficiencia energética, manejo responsable de subproductos (pasilla) y hoja de ruta con trazabilidad GPS.</p>
+        </div>
+        <div class="border-l-4 border-emerald-500 pl-4 py-2 bg-stone-800 rounded-r-lg">
+          <span class="text-emerald-400 font-bold text-sm">Nivel 3: Base Agrícola y Social (Cimientos en Finca)</span>
+          <p class="text-stone-300 mt-1">Impacto laboral directo (pago justo de jornales), beneficio ecológico (tratamiento de aguas mieles, abono de pulpa) y conservación de suelo/sombra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. DIAGNÓSTICO FINANCIERO COMPLETO -->
+  <section id="financiero" class="py-16 px-6 max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="text-amber-800 text-xs font-bold uppercase tracking-wider">Entregable Final</span>
+      <h2 class="text-3xl font-bold text-amber-950 mt-1">Diagnóstico Financiero & Portafolio de Productos</h2>
+    </div>
+
+    <!-- Indicadores Financieros Clave -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10 text-center">
+      <div class="bg-amber-100/60 p-4 rounded-xl border border-amber-200">
+        <span class="text-xs text-stone-500 uppercase font-bold">WACC / Tasa Eval.</span>
+        <p class="text-2xl font-bold text-amber-950 mt-1">15%</p>
+      </div>
+      <div class="bg-amber-100/60 p-4 rounded-xl border border-amber-200">
+        <span class="text-xs text-stone-500 uppercase font-bold">Aporte Socios</span>
+        <p class="text-2xl font-bold text-amber-950 mt-1">$12.0M COP</p>
+      </div>
+      <div class="bg-amber-100/60 p-4 rounded-xl border border-amber-200">
+        <span class="text-xs text-stone-500 uppercase font-bold">Inversión Inicial</span>
+        <p class="text-2xl font-bold text-amber-950 mt-1">$6.0M COP</p>
+      </div>
+      <div class="bg-amber-100/60 p-4 rounded-xl border border-amber-200">
+        <span class="text-xs text-stone-500 uppercase font-bold">TRM Base</span>
+        <p class="text-2xl font-bold text-amber-950 mt-1">$3,126 COP</p>
+      </div>
+    </div>
+
+    <!-- Portafolio de 6 Productos -->
+    <h3 class="text-xl font-bold text-amber-900 mb-6 flex items-center gap-2">
+      <i data-lucide="shopping-bag"></i> Estrategia de Precios y Portafolio de Productos
+    </h3>
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+      <div class="bg-white p-5 rounded-xl border border-amber-200 shadow-sm">
+        <div class="flex justify-between items-start mb-2">
+          <h4 class="font-bold text-amber-900 text-sm">Molido 2.5 Kg</h4>
+          <span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded">IVA 5%</span>
+        </div>
+        <p class="text-xl font-extrabold text-stone-800">$152,381 COP</p>
+        <p class="text-xs text-stone-500 mb-2">Costo Unitario: $84,000 COP</p>
+        <span class="text-xs text-stone-600 block border-t pt-2">Venta Base: 30 un/año</span>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl border border-amber-200 shadow-sm">
+        <div class="flex justify-between items-start mb-2">
+          <h4 class="font-bold text-amber-900 text-sm">Molido 1 Libra</h4>
+          <span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded">IVA 5%</span>
+        </div>
+        <p class="text-xl font-extrabold text-stone-800">$47,600 COP</p>
+        <p class="text-xs text-stone-500 mb-2">Costo Unitario: $19,000 COP</p>
+        <span class="text-xs text-stone-600 block border-t pt-2">Venta Base: 450 un/año</span>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl border border-amber-200 shadow-sm">
+        <div class="flex justify-between items-start mb-2">
+          <h4 class="font-bold text-amber-900 text-sm">Molido 1/2 Libra</h4>
+          <span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded">IVA 5%</span>
+        </div>
+        <p class="text-xl font-extrabold text-stone-800">$28,571 COP</p>
+        <p class="text-xs text-stone-500 mb-2">Costo Unitario: $11,000 COP</p>
+        <span class="text-xs text-stone-600 block border-t pt-2">Venta Base: 600 un/año</span>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl border border-amber-200 shadow-sm">
+        <div class="flex justify-between items-start mb-2">
+          <h4 class="font-bold text-amber-900 text-sm">Grano 2.5 Kg</h4>
+          <span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded">IVA 5%</span>
+        </div>
+        <p class="text-xl font-extrabold text-stone-800">$153,081 COP</p>
+        <p class="text-xs text-stone-500 mb-2">Costo Unitario: $83,000 COP</p>
+        <span class="text-xs text-stone-600 block border-t pt-2">Venta Base: 6 un/año</span>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl border border-amber-200 shadow-sm">
+        <div class="flex justify-between items-start mb-2">
+          <h4 class="font-bold text-amber-900 text-sm">Grano 1 Libra</h4>
+          <span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded">IVA 5%</span>
+        </div>
+        <p class="text-xl font-extrabold text-stone-800">$47,619 COP</p>
+        <p class="text-xs text-stone-500 mb-2">Costo Unitario: $18,500 COP</p>
+        <span class="text-xs text-stone-600 block border-t pt-2">Venta Base: 150 un/año</span>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl border border-amber-200 shadow-sm">
+        <div class="flex justify-between items-start mb-2">
+          <h4 class="font-bold text-amber-900 text-sm">Grano 1/2 Libra</h4>
+          <span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded">IVA 5%</span>
+        </div>
+        <p class="text-xl font-extrabold text-stone-800">$28,571 COP</p>
+        <p class="text-xs text-stone-500 mb-2">Costo Unitario: $10,500 COP</p>
+        <span class="text-xs text-stone-600 block border-t pt-2">Venta Base: 240 un/año</span>
+      </div>
+    </div>
+
+    <!-- Gastos Fijos & Nómina -->
+    <div class="bg-stone-900 text-white rounded-2xl p-8 shadow-xl grid md:grid-cols-2 gap-8">
+      <div>
+        <h4 class="text-lg font-bold text-amber-400 mb-4 flex items-center gap-2">
+          <i data-lucide="calculator"></i> Estructura de Gastos Fijos (Anual)
+        </h4>
+        <ul class="space-y-2 text-xs text-stone-300">
+          <li class="flex justify-between border-b border-stone-800 pb-2"><span>Arriendo:</span> <span class="font-bold text-white">$7,200,000 COP</span></li>
+          <li class="flex justify-between border-b border-stone-800 pb-2"><span>Servicios Públicos:</span> <span class="font-bold text-white">$2,400,000 COP</span></li>
+          <li class="flex justify-between border-b border-stone-800 pb-2"><span>Internet:</span> <span class="font-bold text-white">$720,000 COP</span></li>
+          <li class="flex justify-between font-semibold text-amber-300 pt-2"><span>Total Gastos Fijos:</span> <span>$10,320,000 COP</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-bold text-amber-400 mb-4 flex items-center gap-2">
+          <i data-lucide="user-check"></i> Nómina & Capital
+        </h4>
+        <ul class="space-y-2 text-xs text-stone-300">
+          <li class="flex justify-between border-b border-stone-800 pb-2"><span>Nómina Administrativa (Anual):</span> <span class="font-bold text-white">$16,012,500 COP</span></li>
+          <li class="flex justify-between border-b border-stone-800 pb-2"><span>Factor Prestacional:</span> <span class="font-bold text-white">52%</span></li>
+          <li class="flex justify-between border-b border-stone-800 pb-2"><span>Crédito Bancario:</span> <span class="font-bold text-white">5 años @ 22% EA</span></li>
+          <li class="flex justify-between font-semibold text-amber-300 pt-2"><span>Presupuesto Mkt (Año 1):</span> <span>$150,000 COP</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-amber-950 text-stone-400 py-8 px-6 text-center text-xs border-t border-amber-900">
+    <p>© 2026 Café Flor y Berna - Todos los derechos reservados.</p>
+    <p class="text-stone-500 mt-1">Desarrollado para la sustentación y presentación del proyecto de consultoría empresarial.</p>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP WEB -->
+  <a href="https://api.whatsapp.com/send?phone=573000000000&text=Hola,%20me%20gustaria%20recibir%20mas%20informacion%20de%20Cafe%20Flor%20y%20Berna" 
+     target="_blank" 
+     class="fixed bottom-6 right-6 bg-emerald-600 hover:bg-emerald-500 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 z-50"
+     title="Abrir WhatsApp Web">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+  </a>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
