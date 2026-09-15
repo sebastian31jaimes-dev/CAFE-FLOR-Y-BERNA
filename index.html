@@ -49,7 +49,7 @@
       <span class="bg-amber-800/80 text-amber-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest">Dashboard de Entregables Estratégicos</span>
       <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">Asesoramiento Integral: Café Flor y Berna</h1>
       <p class="text-lg md:text-xl text-stone-300 max-w-3xl mx-auto mb-8">
-        Diagnóstico financiero, Mercado Cabeza de Playa, Salience Model, Lienzo de Propuesta de Valor, Triple Impacto e Iceberg de Sostenibilidad.
+        Diagnóstico financiero, Mercado Cabeza de Playa, Service Blueprint, Salience Model, Lienzo de Propuesta de Valor, Triple Impacto e Iceberg de Sostenibilidad.
       </p>
       <div class="flex flex-wrap justify-center gap-4">
         <a href="cafe flor y berna.docx" download class="bg-amber-700 hover:bg-amber-600 text-white px-6 py-3 rounded-lg font-bold transition shadow-lg flex items-center gap-2">
@@ -106,6 +106,7 @@
     <!-- Pestañas -->
     <div class="flex flex-wrap justify-center gap-2 mb-8 border-b border-stone-200 pb-4">
       <button onclick="switchTab('cadena-valor')" id="btn-cadena-valor" class="tab-btn active px-4 py-2 rounded-lg font-bold text-sm bg-amber-900 text-white shadow">Cadena de Valor</button>
+      <button onclick="switchTab('blueprint')" id="btn-blueprint" class="tab-btn px-4 py-2 rounded-lg font-bold text-sm bg-stone-200 text-stone-700 hover:bg-stone-300">Service Blueprint</button>
       <button onclick="switchTab('salience-model')" id="btn-salience-model" class="tab-btn px-4 py-2 rounded-lg font-bold text-sm bg-stone-200 text-stone-700 hover:bg-stone-300">Salience Model</button>
       <button onclick="switchTab('cabeza-playa')" id="btn-cabeza-playa" class="tab-btn px-4 py-2 rounded-lg font-bold text-sm bg-stone-200 text-stone-700 hover:bg-stone-300">Cabeza de Playa & Buyer Persona</button>
       <button onclick="switchTab('chet-holmes')" id="btn-chet-holmes" class="tab-btn px-4 py-2 rounded-lg font-bold text-sm bg-stone-200 text-stone-700 hover:bg-stone-300">Pirámide Chet Holmes</button>
@@ -124,7 +125,17 @@
       </div>
     </div>
 
-    <!-- Pestaña 2: Salience Model -->
+    <!-- Pestaña 2: Service Blueprint -->
+    <div id="tab-blueprint" class="tab-content hidden">
+      <div class="bg-white p-6 rounded-2xl shadow-lg border border-amber-200 mb-6">
+        <h3 class="text-xl font-bold text-amber-900 mb-4 text-center">Service Blueprint (Diseño de Servicio)</h3>
+        <div class="rounded-xl overflow-hidden border border-amber-200 shadow-md cursor-pointer mb-6" onclick="openModal('service-blueprint.png')">
+          <img src="service-blueprint.png" alt="Service Blueprint Café Flor y Berna" class="w-full h-auto object-cover hover:scale-[1.01] transition duration-300">
+        </div>
+      </div>
+    </div>
+
+    <!-- Pestaña 3: Salience Model -->
     <div id="tab-salience-model" class="tab-content hidden">
       <div class="bg-white p-6 rounded-2xl shadow-lg border border-amber-200 mb-6">
         <h3 class="text-xl font-bold text-amber-900 mb-4 text-center">Salience Model (Modelo de Saliencia)</h3>
@@ -134,7 +145,7 @@
       </div>
     </div>
 
-    <!-- Pestaña 3: Cabeza de Playa & Buyer Persona -->
+    <!-- Pestaña 4: Cabeza de Playa & Buyer Persona -->
     <div id="tab-cabeza-playa" class="tab-content hidden">
       <div class="bg-white p-6 rounded-2xl shadow-lg border border-amber-200">
         <h3 class="text-xl font-bold text-amber-900 mb-4 text-center">Ficha del Buyer Persona: Celia Márquez</h3>
@@ -144,7 +155,7 @@
       </div>
     </div>
 
-    <!-- Pestaña 4: Chet Holmes -->
+    <!-- Pestaña 5: Chet Holmes -->
     <div id="tab-chet-holmes" class="tab-content hidden">
       <div class="bg-stone-900 text-white p-6 rounded-2xl shadow-xl">
         <h3 class="text-2xl font-bold text-amber-400 mb-6 text-center">Pirámide de Mercado Híbrida (Chet Holmes)</h3>
@@ -154,7 +165,7 @@
       </div>
     </div>
 
-    <!-- Pestaña 5: Propuesta de Valor -->
+    <!-- Pestaña 6: Propuesta de Valor -->
     <div id="tab-propuesta-valor" class="tab-content hidden">
       <div class="bg-amber-50 p-6 rounded-2xl border border-amber-200 shadow-md">
         <h3 class="text-xl font-bold text-amber-900 mb-4 text-center">Lienzo: Profundiza, Entiende y Reconstruye</h3>
@@ -164,7 +175,7 @@
       </div>
     </div>
 
-    <!-- Pestaña 6: Triple Impacto -->
+    <!-- Pestaña 7: Triple Impacto -->
     <div id="tab-triple-impacto" class="tab-content hidden">
       <div class="bg-white p-6 rounded-2xl border border-amber-200 shadow-lg">
         <h3 class="text-xl font-bold text-amber-900 mb-4 text-center">Estrategia de Triple Impacto</h3>
@@ -174,7 +185,7 @@
       </div>
     </div>
 
-    <!-- Pestaña 7: Iceberg -->
+    <!-- Pestaña 8: Iceberg -->
     <div id="tab-iceberg" class="tab-content hidden">
       <div class="bg-stone-900 text-white p-6 rounded-2xl shadow-xl">
         <h3 class="text-xl font-bold text-amber-400 mb-4 text-center">Iceberg de la Sostenibilidad</h3>
