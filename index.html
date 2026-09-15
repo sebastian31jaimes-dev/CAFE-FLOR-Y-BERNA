@@ -125,7 +125,7 @@
       </div>
     </div>
 
-    <!-- Pestaña 2: Service Blueprint (.jpg) -->
+    <!-- Pestaña 2: Service Blueprint -->
     <div id="tab-blueprint" class="tab-content hidden">
       <div class="bg-white p-6 rounded-2xl shadow-lg border border-amber-200 mb-6">
         <h3 class="text-xl font-bold text-amber-900 mb-4 text-center">Service Blueprint (Diseño del Servicio)</h3>
@@ -176,11 +176,64 @@
 
     <!-- Pestaña 4: Cabeza de Playa & Buyer Persona -->
     <div id="tab-cabeza-playa" class="tab-content hidden">
-      <div class="bg-white p-6 rounded-2xl shadow-lg border border-amber-200">
-        <h3 class="text-xl font-bold text-amber-900 mb-4 text-center">Ficha del Buyer Persona: Celia Márquez</h3>
-        <div class="rounded-xl overflow-hidden border border-amber-200 shadow-md cursor-pointer" onclick="openModal('buyer-persona.png')">
-          <img src="buyer-persona.png" alt="Buyer Persona Celia Márquez" class="w-full h-auto object-cover rounded-xl shadow hover:scale-[1.01] transition duration-300">
+      <div class="space-y-8">
+
+        <!-- BLOQUE ESTRATÉGICO DE CABEZA DE PLAYA -->
+        <div class="bg-amber-950 text-amber-100 p-8 rounded-2xl shadow-xl border border-amber-900">
+          <div class="text-center mb-6">
+            <span class="bg-amber-800 text-amber-200 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-bold">Estrategia B2B / B2C</span>
+            <h3 class="text-2xl font-extrabold text-white mt-2">Mercado Cabeza de Playa Seleccionado</h3>
+            <p class="text-xs text-amber-300 max-w-2xl mx-auto mt-1">Empresas de Servicios Profesionales (Consultoras, Agencias y Firmas de Abogados) en Bogotá que compran Regalos Corporativos de Lujo y requieren Experiencias de Café de Especialidad (Huila - Honey) para sus Eventos VIP.</p>
+          </div>
+
+          <!-- MÁRGENES Y DATOS DEL MERCADO -->
+          <div class="grid md:grid-cols-3 gap-4 text-xs mb-6">
+            <div class="bg-amber-900/60 p-4 rounded-xl border border-amber-800">
+              <h4 class="font-bold text-amber-400 text-sm mb-1">📍 TAM (Mercado Total)</h4>
+              <p class="text-amber-100 font-extrabold text-lg">~$12.000M COP</p>
+              <p class="text-stone-300 mt-1">Gasto anual en café de especialidad B2C/B2B en segmentos medio-altos de Bogotá.</p>
+            </div>
+            <div class="bg-amber-900/60 p-4 rounded-xl border border-amber-800">
+              <h4 class="font-bold text-amber-400 text-sm mb-1">🎯 SAM (Accesible)</h4>
+              <p class="text-amber-100 font-extrabold text-lg">~$850M COP</p>
+              <p class="text-stone-300 mt-1">Presupuesto anual estimado en regalos corporativos y catas para eventos boutique.</p>
+            </div>
+            <div class="bg-amber-900/60 p-4 rounded-xl border border-amber-800">
+              <h4 class="font-bold text-amber-400 text-sm mb-1">🚀 SOM (Objetivo Inicial)</h4>
+              <p class="text-amber-100 font-extrabold text-lg">~$60.96M COP</p>
+              <p class="text-stone-300 mt-1">100% de ventas proyectadas (50 kg/mes) capturando solo el 7% del SAM.</p>
+            </div>
+          </div>
+
+          <!-- JUSTIFICACIÓN Y PLAN DE DOMINACIÓN -->
+          <div class="grid md:grid-cols-2 gap-6 text-xs border-t border-amber-900 pt-6">
+            <div>
+              <h4 class="font-bold text-amber-300 text-sm mb-2">💡 Justificación Estratégica:</h4>
+              <ul class="space-y-2 text-stone-300">
+                <li>• <strong>Origen Huila & Honey:</strong> Denominación de origen con dulzor natural y acidez limpia que supera al café industrial.</li>
+                <li>• <strong>Presupuesto Corporativo:</strong> Kits entre $60.000 y $120.000 COP (2 bolsas de 250g con accesorios o catas).</li>
+                <li>• <strong>Ajuste Operativo (50 kg/mes):</strong> Con 10-15 cuentas corporativas al año o 2-3 eventos/mes se absorbe el 100% de la producción.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-amber-300 text-sm mb-2">⚡ Plan de Dominación & Conversión:</h4>
+              <ul class="space-y-2 text-stone-300">
+                <li>• <strong>Propuesta "Llave en Mano":</strong> Venta del kit corporativo + estación de cata o preparación en vivo para los eventos VIP.</li>
+                <li>• <strong>Efecto "Caballo de Troya" (B2B a B2C):</strong> Tarjeta personalizada con código QR en cada bolsa corporativa (10% OFF + envío gratis para la primera compra del hogar).</li>
+              </ul>
+            </div>
+          </div>
         </div>
+
+        <!-- FICHA VISUAL DEL BUYER PERSONA -->
+        <div class="bg-white p-6 rounded-2xl shadow-lg border border-amber-200">
+          <h3 class="text-xl font-bold text-amber-900 mb-4 text-center">Ficha del Buyer Persona: Celia Márquez</h3>
+          <div class="rounded-xl overflow-hidden border border-amber-200 shadow-md cursor-pointer" onclick="openModal('buyer-persona.png')">
+            <img src="buyer-persona.png" alt="Buyer Persona Celia Márquez" class="w-full h-auto object-cover rounded-xl shadow hover:scale-[1.01] transition duration-300">
+          </div>
+        </div>
+
       </div>
     </div>
 
