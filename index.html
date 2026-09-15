@@ -67,8 +67,8 @@
         <a href="cafe flor y berna.docx" download class="bg-amber-700 hover:bg-amber-600 text-white px-6 py-3 rounded-lg font-bold transition shadow-lg flex items-center gap-2">
           <i data-lucide="file-text" class="w-5 h-5"></i> Descargar Documento Completo (.docx)
         </a>
-        <a href="#herramienta-interactive" class="bg-amber-900/80 hover:bg-amber-800 text-amber-200 px-6 py-3 rounded-lg font-bold transition shadow-lg flex items-center gap-2 border border-amber-700">
-          <i data-lucide="wrench" class="w-5 h-5"></i> Probar Herramienta Interactiva
+        <a href="#multimedia" class="bg-amber-900/80 hover:bg-amber-800 text-amber-200 px-6 py-3 rounded-lg font-bold transition shadow-lg flex items-center gap-2 border border-amber-700">
+          <i data-lucide="play-circle" class="w-5 h-5"></i> Ver Video Promocional
         </a>
       </div>
       <p class="text-xs text-stone-400 mt-6">Consultores: Sebastián Hernández & Juan Sebastián Jaimes | Bogotá, Colombia (2026)</p>
@@ -77,19 +77,24 @@
 
   <section id="multimedia" class="py-16 px-6 max-w-6xl mx-auto border-b border-stone-200 no-print">
     <div class="text-center mb-10">
-      <h2 class="text-3xl font-bold text-amber-950">Contenido Publicitario y Galería Oficial</h2>
-      <p class="text-stone-600">Material audiovisual de la marca, empaques de origen y punto de degustación presencial.</p>
+      <span class="bg-amber-800 text-amber-200 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-bold">Lanzamiento Oficial</span>
+      <h2 class="text-3xl font-bold text-amber-950 mt-2">Video Promocional & Galería de Marca</h2>
+      <p class="text-stone-600 text-sm mt-1">Material audiovisual publicitario, empaques de origen y experiencia presencial en stand.</p>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-8 items-center">
-      <div class="bg-black rounded-2xl overflow-hidden shadow-2xl aspect-[9/16] md:aspect-video relative flex items-center justify-center border-2 border-amber-900 max-h-[500px] mx-auto w-full">
+    <div class="grid md:grid-cols-12 gap-8 items-center">
+      <div class="md:col-span-7 bg-black rounded-2xl overflow-hidden shadow-2xl aspect-[9/16] md:aspect-video relative flex flex-col justify-between border-2 border-amber-600 max-h-[520px] mx-auto w-full group">
         <video class="w-full h-full object-cover" controls autoplay loop muted poster="galeria-logo.jpg.png">
+          <source src="video-nuevo.mp4" type="video/mp4">
           <source src="video-promocional.mp4.mp4" type="video/mp4">
           Tu navegador no soporta la reproducción de video.
         </video>
+        <div class="absolute top-3 left-3 bg-black/80 text-amber-300 text-xs px-3 py-1 rounded-full font-bold border border-amber-500/50 flex items-center gap-1 shadow">
+          <i data-lucide="video" class="w-3.5 h-3.5"></i> Video Promocional
+        </div>
       </div>
 
-      <div class="grid grid-cols-2 gap-4">
+      <div class="md:col-span-5 grid grid-cols-2 gap-4">
         <div class="bg-stone-200 h-44 rounded-xl overflow-hidden shadow relative group cursor-pointer border border-amber-200" onclick="openModal('galeria-disponibles.jpg.png')">
           <img src="galeria-disponibles.jpg.png" alt="Lanzamiento Café Flor y Berna" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
           <span class="absolute bottom-2 left-2 bg-black/75 text-amber-300 text-[10px] font-bold px-2 py-1 rounded">Disponibilidad & WhatsApp</span>
