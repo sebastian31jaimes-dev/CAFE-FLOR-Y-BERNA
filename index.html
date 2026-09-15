@@ -11,14 +11,14 @@
 </head>
 <body class="bg-stone-50 text-stone-800 font-sans antialiased">
 
-  <!-- NAVBAR CON LOGO OFICIAL MÁS GRANDE -->
-  <nav class="bg-amber-950 text-amber-100 sticky top-0 z-50 shadow-lg py-4 px-6 flex justify-between items-center border-b border-amber-900">
-    <div class="flex items-center space-x-4">
-      <!-- Logo ampliado (w-14 h-14) -->
-      <img src="galeria-logo.jpg.png" alt="Logo Café Flor & Berna" class="w-14 h-14 rounded-full border-2 border-amber-500 object-cover shadow-md hover:scale-105 transition duration-300">
+  <!-- NAVBAR CON LOGO OFICIAL -->
+  <nav class="bg-amber-950 text-amber-100 sticky top-0 z-50 shadow-lg py-3 px-6 flex justify-between items-center border-b border-amber-900">
+    <div class="flex items-center space-x-3">
+      <!-- Logo de la marca -->
+      <img src="galeria-logo.jpg.png" alt="Logo Café Flor & Berna" class="w-12 h-12 rounded-full border-2 border-amber-500 object-cover shadow">
       <div>
-        <span class="text-2xl font-extrabold tracking-wide block leading-none text-white">Café Flor & Berna</span>
-        <span class="text-xs text-amber-400 font-medium block mt-1">Origen Huila</span>
+        <span class="text-xl font-bold tracking-wide block leading-none text-white">Café Flor & Berna</span>
+        <span class="text-xs text-amber-400 block mt-1">Origen Huila</span>
       </div>
     </div>
     
@@ -44,9 +44,15 @@
     </div>
   </nav>
 
-  <!-- HERO SECTION -->
-  <header id="inicio" class="relative bg-gradient-to-r from-amber-950 via-stone-900 to-amber-900 text-white py-20 px-6 text-center border-b border-amber-800">
-    <div class="max-w-5xl mx-auto">
+  <!-- HERO SECTION CON LOGO DESTACADO EN EL BANNER FRENTE AL DEGRADADO -->
+  <header id="inicio" class="relative bg-gradient-to-r from-amber-950 via-stone-900 to-amber-900 text-white py-16 px-6 text-center border-b border-amber-800">
+    <div class="max-w-5xl mx-auto flex flex-col items-center">
+      
+      <!-- Logo Principal Grande en la Banner Section -->
+      <div class="mb-6 p-2 bg-amber-950/80 rounded-full border-2 border-amber-500 shadow-2xl">
+        <img src="galeria-logo.jpg.png" alt="Café Flor & Berna Logo Principal" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-inner hover:scale-105 transition duration-300">
+      </div>
+
       <span class="bg-amber-800/80 text-amber-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest">Dashboard de Entregables Estratégicos</span>
       <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">Asesoramiento Integral: Café Flor & Berna</h1>
       <p class="text-lg md:text-xl text-stone-300 max-w-3xl mx-auto mb-8">
@@ -72,10 +78,10 @@
     </div>
 
     <div class="grid md:grid-cols-2 gap-8 items-center">
-      <!-- Video Promocional Nativo (Silenciado por defecto) -->
+      <!-- Video Promocional Nativo (Ajustado a la ruta video-promocional.mp4.mp4) -->
       <div class="bg-black rounded-2xl overflow-hidden shadow-2xl aspect-[9/16] md:aspect-video relative flex items-center justify-center border-2 border-amber-900 max-h-[500px] mx-auto w-full">
         <video class="w-full h-full object-cover" controls autoplay loop muted poster="galeria-logo.jpg.png">
-          <source src="video-promocional.mp4" type="video/mp4">
+          <source src="video-promocional.mp4.mp4" type="video/mp4">
           Tu navegador no soporta la reproducción de video.
         </video>
       </div>
