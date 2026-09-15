@@ -11,13 +11,14 @@
 </head>
 <body class="bg-stone-50 text-stone-800 font-sans antialiased">
 
-  <!-- NAVBAR -->
-  <nav class="bg-amber-950 text-amber-100 sticky top-0 z-50 shadow-lg py-4 px-6 flex justify-between items-center border-b border-amber-900">
+  <!-- NAVBAR CON LOGO OFICIAL -->
+  <nav class="bg-amber-950 text-amber-100 sticky top-0 z-50 shadow-lg py-3 px-6 flex justify-between items-center border-b border-amber-900">
     <div class="flex items-center space-x-3">
-      <i data-lucide="coffee" class="w-8 h-8 text-amber-500"></i>
+      <!-- Logo de la marca -->
+      <img src="galeria-logo.jpg" alt="Logo Café Flor & Berna" class="w-10 h-10 rounded-full border border-amber-500 object-cover shadow">
       <div>
-        <span class="text-xl font-bold tracking-wide block">Café Flor y Berna</span>
-        <span class="text-xs text-amber-400 block -mt-1">Origen Huila • Proceso Honey</span>
+        <span class="text-xl font-bold tracking-wide block leading-none text-white">Café Flor & Berna</span>
+        <span class="text-xs text-amber-400 block mt-1">Origen Huila</span>
       </div>
     </div>
     
@@ -47,7 +48,7 @@
   <header id="inicio" class="relative bg-gradient-to-r from-amber-950 via-stone-900 to-amber-900 text-white py-20 px-6 text-center border-b border-amber-800">
     <div class="max-w-5xl mx-auto">
       <span class="bg-amber-800/80 text-amber-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest">Dashboard de Entregables Estratégicos</span>
-      <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">Asesoramiento Integral: Café Flor y Berna</h1>
+      <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">Asesoramiento Integral: Café Flor & Berna</h1>
       <p class="text-lg md:text-xl text-stone-300 max-w-3xl mx-auto mb-8">
         Diagnóstico financiero, Mercado Cabeza de Playa, Service Blueprint, Salience Model, Lienzo de Propuesta de Valor, Triple Impacto e Iceberg de Sostenibilidad.
       </p>
@@ -63,34 +64,39 @@
     </div>
   </header>
 
-  <!-- 1. MULTIMEDIA & VIDEO PUBLICITARIO -->
+  <!-- 1. MULTIMEDIA & GALERÍA DE IMÁGENES REALES -->
   <section id="multimedia" class="py-16 px-6 max-w-6xl mx-auto border-b border-stone-200">
     <div class="text-center mb-10">
-      <h2 class="text-3xl font-bold text-amber-950">Contenido Publicitario y Galería</h2>
-      <p class="text-stone-600">Material audiovisual para promoción de marca y experiencias B2B/B2C.</p>
+      <h2 class="text-3xl font-bold text-amber-950">Contenido Publicitario y Galería Oficial</h2>
+      <p class="text-stone-600">Material audiovisual de la marca, empaques de origen y punto de degustación presencial.</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-8 items-center">
-      <div class="bg-black rounded-2xl overflow-hidden shadow-2xl aspect-video relative flex items-center justify-center border-2 border-amber-900">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/placeholder" title="Video Publicitario Café Flor y Berna" frameborder="0" allowfullscreen></iframe>
+      <!-- Video Promocional Nativo -->
+      <div class="bg-black rounded-2xl overflow-hidden shadow-2xl aspect-[9/16] md:aspect-video relative flex items-center justify-center border-2 border-amber-900 max-h-[500px] mx-auto w-full">
+        <video class="w-full h-full object-cover" controls autoplay loop muted poster="galeria-logo.jpg">
+          <source src="video-promocional.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
       </div>
 
+      <!-- Galería de fotos reales -->
       <div class="grid grid-cols-2 gap-4">
-        <div class="bg-stone-200 h-40 rounded-xl overflow-hidden shadow relative group cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=1000&q=80')">
-          <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=500&q=80" alt="Origen Huila" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-          <span class="absolute bottom-2 left-2 bg-black/70 text-amber-300 text-xs px-2 py-1 rounded">Origen Huila</span>
+        <div class="bg-stone-200 h-44 rounded-xl overflow-hidden shadow relative group cursor-pointer border border-amber-200" onclick="openModal('galeria-disponibles.jpg')">
+          <img src="galeria-disponibles.jpg" alt="Lanzamiento Café Flor y Berna" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          <span class="absolute bottom-2 left-2 bg-black/75 text-amber-300 text-[10px] font-bold px-2 py-1 rounded">Disponibilidad & WhatsApp</span>
         </div>
-        <div class="bg-stone-200 h-40 rounded-xl overflow-hidden shadow relative group cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=80')">
-          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Proceso Honey" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-          <span class="absolute bottom-2 left-2 bg-black/70 text-amber-300 text-xs px-2 py-1 rounded">Proceso Honey</span>
+        <div class="bg-stone-200 h-44 rounded-xl overflow-hidden shadow relative group cursor-pointer border border-amber-200" onclick="openModal('galeria-stand.jpg')">
+          <img src="galeria-stand.jpg" alt="Stand Plaza de las Américas" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          <span class="absolute bottom-2 left-2 bg-black/75 text-amber-300 text-[10px] font-bold px-2 py-1 rounded">Stand Plaza de las Américas</span>
         </div>
-        <div class="bg-stone-200 h-40 rounded-xl overflow-hidden shadow relative group cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1000&q=80')">
-          <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=500&q=80" alt="Empaque Trazable" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-          <span class="absolute bottom-2 left-2 bg-black/70 text-amber-300 text-xs px-2 py-1 rounded">Empaque QR</span>
+        <div class="bg-stone-200 h-44 rounded-xl overflow-hidden shadow relative group cursor-pointer border border-amber-200" onclick="openModal('galeria-producto.jpg')">
+          <img src="galeria-producto.jpg" alt="Empaque Finca Los Naranjos" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          <span class="absolute bottom-2 left-2 bg-black/75 text-amber-300 text-[10px] font-bold px-2 py-1 rounded">Finca Los Naranjos</span>
         </div>
-        <div class="bg-stone-200 h-40 rounded-xl overflow-hidden shadow relative group cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=80')">
-          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=500&q=80" alt="Catas B2B" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-          <span class="absolute bottom-2 left-2 bg-black/70 text-amber-300 text-xs px-2 py-1 rounded">Catas Corporativas</span>
+        <div class="bg-stone-200 h-44 rounded-xl overflow-hidden shadow relative group cursor-pointer border border-amber-200" onclick="openModal('galeria-logo.jpg')">
+          <img src="galeria-logo.jpg" alt="Marca Café Flor y Berna" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          <span class="absolute bottom-2 left-2 bg-black/75 text-amber-300 text-[10px] font-bold px-2 py-1 rounded">Identidad de Marca</span>
         </div>
       </div>
     </div>
@@ -125,7 +131,7 @@
       </div>
     </div>
 
-    <!-- Pestaña 2: Service Blueprint -->
+    <!-- Pestaña 2: Service Blueprint (.jpg) -->
     <div id="tab-blueprint" class="tab-content hidden">
       <div class="bg-white p-6 rounded-2xl shadow-lg border border-amber-200 mb-6">
         <h3 class="text-xl font-bold text-amber-900 mb-4 text-center">Service Blueprint (Diseño del Servicio)</h3>
@@ -183,7 +189,7 @@
           <div class="text-center mb-6">
             <span class="bg-amber-800 text-amber-200 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-bold">Estrategia B2B / B2C</span>
             <h3 class="text-2xl font-extrabold text-white mt-2">Mercado Cabeza de Playa Seleccionado</h3>
-            <p class="text-xs text-amber-300 max-w-2xl mx-auto mt-1">Empresas de Servicios Profesionales (Consultoras, Agencias y Firmas de Abogados) en Bogotá que compran Regalos Corporativos de Lujo y requieren Experiencias de Café de Especialidad (Huila - Honey) para sus Eventos VIP.</p>
+            <p class="text-xs text-amber-300 max-w-2xl mx-auto mt-1">Empresas de Servicios Profesionales (Consultoras, Agencias y Firmas de Abogados) en Bogotá que compran Regalos Corporativos de Lujo y requieren Experiencias de Café de Especialidad (Origen Huila) para sus Eventos VIP.</p>
           </div>
 
           <!-- MÁRGENES Y DATOS DEL MERCADO -->
@@ -210,7 +216,7 @@
             <div>
               <h4 class="font-bold text-amber-300 text-sm mb-2">💡 Justificación Estratégica:</h4>
               <ul class="space-y-2 text-stone-300">
-                <li>• <strong>Origen Huila & Honey:</strong> Denominación de origen con dulzor natural y acidez limpia que supera al café industrial.</li>
+                <li>• <strong>Origen Huila:</strong> Denominación de origen con dulzor natural y acidez limpia que supera al café industrial.</li>
                 <li>• <strong>Presupuesto Corporativo:</strong> Kits entre $60.000 y $120.000 COP (2 bolsas de 250g con accesorios o catas).</li>
                 <li>• <strong>Ajuste Operativo (50 kg/mes):</strong> Con 10-15 cuentas corporativas al año o 2-3 eventos/mes se absorbe el 100% de la producción.</li>
               </ul>
@@ -394,7 +400,7 @@
 
   <!-- FOOTER -->
   <footer class="bg-amber-950 text-stone-400 py-8 px-6 text-center text-xs border-t border-amber-900">
-    <p>© 2026 Café Flor y Berna - Todos los derechos reservados.</p>
+    <p>© 2026 Café Flor & Berna - Todos los derechos reservados.</p>
     <p class="text-stone-500 mt-1">Desarrollado para la sustentación y presentación del proyecto de consultoría empresarial.</p>
   </footer>
 
