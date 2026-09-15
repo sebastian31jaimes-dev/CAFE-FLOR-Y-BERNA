@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Café Flor y Berna | Centro de Consultoría & Entregables</title>
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
     @media print {
@@ -18,6 +20,7 @@
 </head>
 <body class="bg-stone-50 text-stone-800 font-sans antialiased">
 
+  <!-- NAVBAR CON NAVEGACIÓN Y NUEVA SECCIÓN VIDEO PROMOCIONAL -->
   <nav class="bg-amber-950 text-amber-100 sticky top-0 z-50 shadow-lg py-3 px-6 flex justify-between items-center border-b border-amber-900 no-print">
     <div class="flex items-center space-x-3">
       <img src="galeria-logo.jpg.png" alt="Logo Café Flor & Berna" class="w-12 h-12 rounded-full border-2 border-amber-500 object-cover shadow">
@@ -52,6 +55,7 @@
     </div>
   </nav>
 
+  <!-- HERO SECTION -->
   <header id="inicio" class="relative bg-gradient-to-r from-amber-950 via-stone-900 to-amber-900 text-white py-16 px-6 text-center border-b border-amber-800 no-print">
     <div class="max-w-5xl mx-auto flex flex-col items-center">
       
@@ -76,6 +80,7 @@
     </div>
   </header>
 
+  <!-- SECCIÓN INDEPENDIENTE: VIDEO PROMOCIONAL NUEVO -->
   <section id="video-promo-seccion" class="py-16 px-6 bg-stone-900 text-white border-b border-amber-900 no-print">
     <div class="max-w-4xl mx-auto text-center">
       <span class="bg-amber-800 text-amber-200 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-bold">Material Publicitario Oficial</span>
@@ -84,15 +89,17 @@
         Conoce la experiencia de marca, nuestro café de origen Huila y la propuesta comercial de Café Flor & Berna.
       </p>
 
+      <!-- Reproductor ajustado a video-nuevo.mp4.mp4 -->
       <div class="bg-black rounded-2xl overflow-hidden shadow-2xl border-2 border-amber-500 aspect-video w-full max-w-3xl mx-auto relative group">
-        <video class="w-full h-full object-cover" controls poster="galeria-logo.jpg.png">
-          <source src="video-nuevo.mp4" type="video/mp4">
+        <video class="w-full h-full object-cover" controls autoplay loop muted poster="galeria-logo.jpg.png">
+          <source src="video-nuevo.mp4.mp4" type="video/mp4">
           Tu navegador no soporta la reproducción de video.
         </video>
       </div>
     </div>
   </section>
 
+  <!-- SECCIÓN MULTIMEDIA & GALERÍA (MANTIENE EL VIDEO INSTITUCIONAL ORIGINAL) -->
   <section id="multimedia" class="py-16 px-6 max-w-6xl mx-auto border-b border-stone-200 no-print">
     <div class="text-center mb-10">
       <span class="bg-amber-800 text-amber-200 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-bold">Galería de Experiencia</span>
@@ -101,6 +108,7 @@
     </div>
 
     <div class="grid md:grid-cols-12 gap-8 items-center">
+      <!-- Video Institucional Anterior -->
       <div class="md:col-span-7 bg-black rounded-2xl overflow-hidden shadow-2xl aspect-[9/16] md:aspect-video relative flex flex-col justify-between border-2 border-amber-600 max-h-[520px] mx-auto w-full group">
         <video class="w-full h-full object-cover" controls poster="galeria-logo.jpg.png">
           <source src="video-promocional.mp4.mp4" type="video/mp4">
@@ -111,6 +119,7 @@
         </div>
       </div>
 
+      <!-- Galería de Fotos -->
       <div class="md:col-span-5 grid grid-cols-2 gap-4">
         <div class="bg-stone-200 h-44 rounded-xl overflow-hidden shadow relative group cursor-pointer border border-amber-200" onclick="openModal('galeria-disponibles.jpg.png')">
           <img src="galeria-disponibles.jpg.png" alt="Lanzamiento Café Flor y Berna" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
@@ -132,12 +141,14 @@
     </div>
   </section>
 
+  <!-- ENTREGABLES INTERACTIVOS -->
   <section id="entregables" class="py-16 px-6 max-w-6xl mx-auto border-b border-stone-200 no-print">
     <div class="text-center mb-8">
       <span class="text-amber-800 text-xs font-bold uppercase tracking-wider">Entregables de Consultoría</span>
       <h2 class="text-3xl font-bold text-amber-950 mt-1">Modelos Estratégicos & Infografías</h2>
     </div>
 
+    <!-- Pestañas -->
     <div class="flex flex-wrap justify-center gap-2 mb-8 border-b border-stone-200 pb-4">
       <button onclick="switchTab('cadena-valor')" id="btn-cadena-valor" class="tab-btn active px-4 py-2 rounded-lg font-bold text-sm bg-amber-900 text-white shadow">Cadena de Valor</button>
       <button onclick="switchTab('blueprint')" id="btn-blueprint" class="tab-btn px-4 py-2 rounded-lg font-bold text-sm bg-stone-200 text-stone-700 hover:bg-stone-300">Service Blueprint</button>
@@ -149,6 +160,7 @@
       <button onclick="switchTab('iceberg')" id="btn-iceberg" class="tab-btn px-4 py-2 rounded-lg font-bold text-sm bg-stone-200 text-stone-700 hover:bg-stone-300">Iceberg Sostenibilidad</button>
     </div>
 
+    <!-- Pestaña 1: Cadena de Valor -->
     <div id="tab-cadena-valor" class="tab-content">
       <div class="bg-white p-6 rounded-2xl shadow-lg border border-amber-200 mb-6">
         <h3 class="text-xl font-bold text-amber-900 mb-4 text-center">Lienzo de Cadena de Valor / Modelo de Negocio</h3>
@@ -158,6 +170,7 @@
       </div>
     </div>
 
+    <!-- Pestaña 2: Service Blueprint -->
     <div id="tab-blueprint" class="tab-content hidden">
       <div class="bg-white p-6 rounded-2xl shadow-lg border border-amber-200 mb-6">
         <h3 class="text-xl font-bold text-amber-900 mb-4 text-center">Service Blueprint (Diseño del Servicio)</h3>
@@ -196,6 +209,7 @@
       </div>
     </div>
 
+    <!-- Pestaña 3: Salience Model -->
     <div id="tab-salience-model" class="tab-content hidden">
       <div class="bg-white p-6 rounded-2xl shadow-lg border border-amber-200 mb-6">
         <h3 class="text-xl font-bold text-amber-900 mb-4 text-center">Salience Model (Modelo de Saliencia)</h3>
@@ -205,6 +219,7 @@
       </div>
     </div>
 
+    <!-- Pestaña 4: Cabeza de Playa & Buyer Persona -->
     <div id="tab-cabeza-playa" class="tab-content hidden">
       <div class="space-y-8">
         <div class="bg-amber-950 text-amber-100 p-8 rounded-2xl shadow-xl border border-amber-900">
@@ -262,6 +277,7 @@
       </div>
     </div>
 
+    <!-- Pestaña 5: Chet Holmes -->
     <div id="tab-chet-holmes" class="tab-content hidden">
       <div class="bg-stone-900 text-white p-6 rounded-2xl shadow-xl">
         <h3 class="text-2xl font-bold text-amber-400 mb-6 text-center">Pirámide de Mercado Híbrida (Chet Holmes)</h3>
@@ -271,6 +287,7 @@
       </div>
     </div>
 
+    <!-- Pestaña 6: Propuesta de Valor -->
     <div id="tab-propuesta-valor" class="tab-content hidden">
       <div class="bg-amber-50 p-6 rounded-2xl border border-amber-200 shadow-md">
         <h3 class="text-xl font-bold text-amber-900 mb-4 text-center">Lienzo: Profundiza, Entiende y Reconstruye</h3>
@@ -280,6 +297,7 @@
       </div>
     </div>
 
+    <!-- Pestaña 7: Triple Impacto -->
     <div id="tab-triple-impacto" class="tab-content hidden">
       <div class="bg-white p-6 rounded-2xl border border-amber-200 shadow-lg">
         <h3 class="text-xl font-bold text-amber-900 mb-4 text-center">Estrategia de Triple Impacto</h3>
@@ -289,6 +307,7 @@
       </div>
     </div>
 
+    <!-- Pestaña 8: Iceberg -->
     <div id="tab-iceberg" class="tab-content hidden">
       <div class="bg-stone-900 text-white p-6 rounded-2xl shadow-xl">
         <h3 class="text-xl font-bold text-amber-400 mb-4 text-center">Iceberg de la Sostenibilidad</h3>
@@ -299,6 +318,7 @@
     </div>
   </section>
 
+  <!-- DIAGNÓSTICO FINANCIERO -->
   <section id="financiero" class="py-16 px-6 max-w-6xl mx-auto no-print">
     <div class="text-center mb-12">
       <span class="text-amber-800 text-xs font-bold uppercase tracking-wider">Diagnóstico Financiero</span>
@@ -410,6 +430,7 @@
     </div>
   </section>
 
+  <!-- RECOMENDACIONES FINALES -->
   <section id="recomendaciones" class="py-16 px-6 max-w-6xl mx-auto border-t border-stone-200 no-print">
     <div class="text-center mb-12">
       <span class="bg-amber-800 text-amber-200 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-bold">Dictamen Estratégico</span>
@@ -507,6 +528,7 @@
     </div>
   </section>
 
+  <!-- HERRAMIENTA INTERACTIVA DE CONSULTORÍA EMPRESARIAL -->
   <section id="herramienta-interactive" class="py-16 px-6 max-w-6xl mx-auto border-t border-stone-200">
     <div class="text-center mb-10">
       <span class="bg-amber-900 text-amber-200 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-bold">Herramienta Metodológica Universal</span>
@@ -516,6 +538,7 @@
       </p>
     </div>
 
+    <!-- PASO A PASO EXPLICATIVO -->
     <div class="grid md:grid-cols-4 gap-4 text-xs mb-10 no-print">
       <div class="bg-white p-5 rounded-xl border-t-4 border-amber-900 shadow-md">
         <span class="text-amber-900 font-extrabold text-sm block mb-1">PASO 1</span>
@@ -542,6 +565,7 @@
       </div>
     </div>
 
+    <!-- LIENZO INTERACTIVO EDITABLE -->
     <div id="lienzo-exportable" class="bg-stone-900 text-white p-8 rounded-2xl shadow-2xl border-2 border-amber-600">
       <div class="flex flex-wrap justify-between items-center mb-6 pb-4 border-b border-stone-800">
         <div>
@@ -559,8 +583,10 @@
         </div>
       </div>
 
+      <!-- MATRIZ DE 4 CUADRANTES CON TEXTAREAS EDITABLES -->
       <div class="grid md:grid-cols-2 gap-6">
         
+        <!-- CUADRANTE 1 -->
         <div class="bg-stone-800/90 p-5 rounded-xl border border-stone-700 flex flex-col">
           <div class="flex items-center gap-2 mb-2">
             <span class="bg-amber-900 text-amber-200 text-xs font-bold px-2 py-0.5 rounded">1</span>
@@ -570,6 +596,7 @@
           <textarea id="cuadrante1" rows="5" class="w-full bg-stone-950 text-stone-200 p-3 rounded-lg text-xs border border-stone-800 focus:outline-none focus:border-amber-500 transition resize-none" placeholder="Ejemplo: Estancamiento de calidad en tueste, canales al detal B2C con fletes altos..."></textarea>
         </div>
 
+        <!-- CUADRANTE 2 -->
         <div class="bg-stone-800/90 p-5 rounded-xl border border-stone-700 flex flex-col">
           <div class="flex items-center gap-2 mb-2">
             <span class="bg-amber-700 text-amber-200 text-xs font-bold px-2 py-0.5 rounded">2</span>
@@ -579,6 +606,7 @@
           <textarea id="cuadrante2" rows="5" class="w-full bg-stone-950 text-stone-200 p-3 rounded-lg text-xs border border-stone-800 focus:outline-none focus:border-amber-500 transition resize-none" placeholder="Ejemplo: Formalización en Cámara de Comercio, habilitación de factura electrónica B2B, registro INVIMA..."></textarea>
         </div>
 
+        <!-- CUADRANTE 3 -->
         <div class="bg-stone-800/90 p-5 rounded-xl border border-stone-700 flex flex-col">
           <div class="flex items-center gap-2 mb-2">
             <span class="bg-amber-500 text-stone-950 text-xs font-bold px-2 py-0.5 rounded">3</span>
@@ -588,6 +616,7 @@
           <textarea id="cuadrante3" rows="5" class="w-full bg-stone-950 text-stone-200 p-3 rounded-lg text-xs border border-stone-800 focus:outline-none focus:border-amber-500 transition resize-none" placeholder="Ejemplo: Catación Q-Grader de la Federación Nacional de Cafeteros, empaque trilaminado con válvula..."></textarea>
         </div>
 
+        <!-- CUADRANTE 4 -->
         <div class="bg-stone-800/90 p-5 rounded-xl border border-stone-700 flex flex-col">
           <div class="flex items-center gap-2 mb-2">
             <span class="bg-emerald-600 text-white text-xs font-bold px-2 py-0.5 rounded">4</span>
@@ -605,11 +634,13 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="bg-amber-950 text-stone-400 py-8 px-6 text-center text-xs border-t border-amber-900 no-print">
     <p>© 2026 Café Flor & Berna - Todos los derechos reservados.</p>
     <p class="text-stone-500 mt-1">Desarrollado para la sustentación y presentación del proyecto de consultoría empresarial.</p>
   </footer>
 
+  <!-- BOTÓN FLOTANTE DE WHATSAPP BUSINESS -->
   <a href="https://api.whatsapp.com/send?phone=573187154331&text=Hola,%20me%20gustaria%20recibir%20mas%20informacion%20de%20Cafe%20Flor%20y%20Berna" 
      target="_blank" 
      class="fixed bottom-6 right-6 bg-emerald-600 hover:bg-emerald-500 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 z-50 no-print"
@@ -617,6 +648,7 @@
     <i data-lucide="message-circle" class="w-7 h-7"></i>
   </a>
 
+  <!-- MODAL PARA ZOOM DE IMÁGENES -->
   <div id="imageModal" class="fixed inset-0 bg-black/85 z-50 hidden flex items-center justify-center p-4 cursor-pointer no-print" onclick="closeModal()">
     <img id="modalImg" src="" class="max-w-full max-h-[90vh] rounded-xl shadow-2xl border-2 border-amber-500">
   </div>
